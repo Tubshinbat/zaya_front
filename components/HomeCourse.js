@@ -31,7 +31,7 @@ import { useGroups } from "hooks/use-course";
 const HomeCourse = ({ page, text }) => {
   //FUNCTION
   const [singleService, setSingleService] = useState({});
-  const { courses } = useGroups(`limit=3`, []);
+  const { groups: courses } = useGroups(`limit=3`, []);
 
   return (
     <>
